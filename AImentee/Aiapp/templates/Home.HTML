@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="language-select">
+                <label for="language">Select Language:</label>
+                <select id="language" name="language" required>
+                    <option value="" disabled selected>Select your language</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="tamil">Tamil</option>
+                    <option value="english">English</option>
+                </select>
+            </div>
+            <div class="mic-button">
+                <button onclick="startListening()">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfFryhJ_sVoECr_TWtbvT3omxgc2d08uRfSA&s" alt="Mic Icon">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startListening() {
+            alert("Microphone button clicked!");
+        }
+    </script>
+</body>
+</html>

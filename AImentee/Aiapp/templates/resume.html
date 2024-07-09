@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="name-title">
+                <h1>{{ name }}</h1>
+                <p>{{ Career_Focus }}</p>
+            </div>
+            <div class="contact-info">
+                <p>123 Main St.,<br>
+                   Anywhere, USA 12345<br>
+                   123-456-7890<br>
+                   yourname@email.com
+                </p>
+            </div>
+        </header>
+
+        <hr>
+
+        <section class="objective">
+            <h2>Objective</h2>
+            <p id="objective">{{ Objective }}</p>
+        </section>
+
+        <hr>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3 id="job-title">Role: {{ Job_Title }}</h3>
+                <p id="company-name">{{ company_name }}</p>
+                <p id="job-dates">{{ start_end_date }}</p>
+                <p id="job-responsibilities">{{ job_responsibilities }}</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="accomplishments">
+            <h2>Accomplishments</h2>
+            <p id="accomplishments">{{ Accomplishments }}</p>
+        </section>
+
+        <hr>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="school">
+                <p id="school-info">{{ School_Name }}<br>
+                   {{ school_details }}</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <p id="skills">{{ Skills }}</p>
+        </section>
+
+        <hr>
+
+        <section class="references">
+            <h2>References</h2>
+            <p>Available upon Request</p>
+        </section>
+    </div>
+
+    <!-- No script for speech recognition -->
+</body>
+</html>
+
+
